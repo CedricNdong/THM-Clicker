@@ -17,5 +17,14 @@ function click () {
 </template>
 
 <style scoped>
+.fs-1:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s;
+}
+
+.fs-1:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
 
 </style>
