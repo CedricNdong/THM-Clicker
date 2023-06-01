@@ -12,7 +12,7 @@ function click () {
 
 <template>
   <div class=" border border-secondary m-5 p-3 rounded">
-    <button type="button" class="fs-1 rounded border border-info btn btn-outline-info" @click = "click">👨‍🎓</button>
+    <button type="button" class="fs-1 rounded border border-primary btn btn-outline-primary" @click = "click">👨‍🎓</button>
   </div>
 </template>
 
