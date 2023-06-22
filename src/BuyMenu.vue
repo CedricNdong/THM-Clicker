@@ -45,19 +45,19 @@ function onBuyProfessor () {
     <p class="fw-semibold fs-5"> Buy </p>
     <ul class="list-group">
       <li class="list-group-item text-light">
-        <button  :disabled="props.nStudents " type="button" class = "bg-primary rounded m-2 p-2  text-light" @click = "onBuyTutor">Tutor (2 S/s)
+        <button :disabled="nStudents < calculatePriceTutor()" type="button" class = "bg-primary rounded m-2 p-2  text-light" @click = "onBuyTutor">Tutor (2 S/s)
           <span class = "bg-danger rounded m-1 p-1 ms-3 text-light">  Price: {{ calculatePriceTutor() }} Students </span>
         </button>
       </li>
 
       <li class="list-group-item text-light">
-        <button type="button" class = "bg-primary rounded m-2 p-2  text-light" @click = "onBuyTeacher">Teacher (20 S/s)
+        <button :disabled="nStudents < calculatePriceTeacher()" type="button" class = "bg-primary rounded m-2 p-2  text-light" @click = "onBuyTeacher">Teacher (20 S/s)
           <span class = "bg-danger rounded m-1 p-1 ms-3 text-light">  Price: {{ calculatePriceTeacher() }} Students </span>
         </button>
       </li>
 
       <li class="list-group-item text-light">
-        <button type="button" class = "bg-primary rounded m-2 p-2  text-light" @click = "onBuyProfessor">Professor (100 S/s)
+        <button :disabled="nStudents < calculatePriceProfessor()" type="button" class = "bg-primary rounded m-2 p-2  text-light" @click = "onBuyProfessor">Professor (100 S/s)
           <span class = "bg-danger rounded m-1 p-1 ms-3 text-light">  Price: {{ calculatePriceProfessor() }} Students </span>
         </button>
       </li>

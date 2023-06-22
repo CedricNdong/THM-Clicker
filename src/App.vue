@@ -75,6 +75,7 @@ function buyProfessor (params: { price: number }) {
       <BuyMenu  @did-buy-tutor ="buyTutor" :n-tutors = "state.nTutors"
                 @did-buy-teacher ="buyTeacher" :n-teachers = "state.nTeachers"
                 @did-buy-professor ="buyProfessor" :n-professors = "state.nProfessors"
+                :n-students = "state.nStudents"
       />
     </div>
   </main>
